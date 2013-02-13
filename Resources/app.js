@@ -147,15 +147,17 @@ var view = Ti.UI.createView({
 
 win2.add(view);
 
-var label3 = Titanium.UI.createLabel({
+var button1 = Titanium.UI.createButton({
 	color:'#000',
-	text:'View Label',
+	title:'Button in View',
 	textAlign:'center',
 	top:10,
 	left:10
 });
 
-view.add(label3);
+button1.addEventListener('click', function(e) {alert('You clicked me!')});
+
+view.add(button1);
 win2.add(label2);
 
 var win3 = Ti.UI.createWindow({
